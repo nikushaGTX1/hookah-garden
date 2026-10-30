@@ -40,8 +40,8 @@ export const ICONS: Record<SectionId | 'all', string> = {
 export const SECTIONS: MenuSection[] = [
   {
     id: 'hookah',
-    label: 'ქალიანი',
-    title: 'ქალიანი',
+    label: 'ჩილიმი',
+    title: 'ჩილიმი',
     sub: 'საფირმო ნაზავები და კლასიკა',
     banner: 'images/hookahs.jpg',
     items: [
