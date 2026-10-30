@@ -1,1 +1,75 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --gold: #c9a24a;
+  --gold-hi: #e6c77a;
+  --gold-a60: rgba(201, 162, 74, 0.6);
+  --gold-a45: rgba(201, 162, 74, 0.45);
+  --gold-a25: rgba(201, 162, 74, 0.25);
+  --gold-a15: rgba(201, 162, 74, 0.15);
+  --bg: #0a0907;
+  --bg-2: #110f0b;
+  --bg-3: #13110d;
+  --bg-4: #1c1813;
+  --ink: #efe7d4;
+  --ink-2: #d9cfb8;
+  --ink-3: #b8ae97;
+  --muted: #a89f8a;
+  --green: #7fb77e;
+  --serif: 'Cormorant Garamond', 'Noto Serif Georgian', Georgia, serif;
+  --display: 'Cinzel', 'Noto Serif Georgian', Georgia, serif;
+  --sans: 'Jost', 'Noto Sans Georgian', system-ui, sans-serif;
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 76px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--gold);
+}
+a:hover {
+  color: var(--gold-hi);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
