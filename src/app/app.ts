@@ -26,7 +26,7 @@ export class App {
   protected readonly gallery = GALLERY;
   protected readonly strengthNames = ['', 'მსუბუქი', 'საშუალო', 'მაგარი'];
   protected readonly dots = [1, 2, 3];
-  protected readonly chips = ['რაღაც ხილიანი და მსუბუქი', 'ღვინის შერჩევა', 'საუკეთესო ჯგუფისთვის', 'რაღაც პიტნიანი', 'ვეგეტარიანული საჭმელი', 'უალკოჰოლო'];
+  protected readonly chips = ['რაღაც ხილიანი და მსუბუქი', 'კოქტეილის შერჩევა', 'საუკეთესო ჯგუფისთვის', 'რაღაც პიტნიანი', 'ვეგეტარიანული საჭმელი', 'უალკოჰოლო'];
 
   protected readonly sections: (MenuSection & { icon: string; view: ViewItem[] })[] = SECTIONS.map((s) => ({
     ...s,

@@ -87,7 +87,7 @@
     </div>
     <p class="eyebrow">დაარსდა 2024 · თბილისი</p>
     <h1>Hookah Garden</h1>
-    <p class="lede">ნელი კვამლი · ქართული ღვინო · თბილი საზოგადოება</p>
+    <p class="lede">ნელი კვამლი · საავტორო კოქტეილები · თბილი საზოგადოება</p>
     <span class="status" [class.status--closed]="!openNow">
       <span class="status__dot"></span>{{ openNow ? 'ახლა ღიაა' : 'ახლა დაკეტილია' }} · ყოველდღე 14:00 – 02:00
     </span>
@@ -108,8 +108,8 @@
     <b>30+ არომატი</b><span>ახლად ავსებს ჩვენი ჩილიმის ოსტატი</span>
   </div>
   <div class="perk">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path [attr.d]="icons.wine" /></svg>
-    <b>ქართული მარანი</b><span>საფერავი, ქარვისფერი ქვევრის ღვინო და სხვა</span>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path [attr.d]="icons.cocktails" /></svg>
+    <b>საავტორო კოქტეილები</b><span>ბარში შენჯღრეული, ჩილიმთან შეხამებული</span>
   </div>
   <div class="perk">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 A9 9 0 1 0 21 12 A7 7 0 0 1 12 3 Z" /></svg>
@@ -133,7 +133,7 @@
     <div class="search">
       <label for="search" class="sr-only">მენიუში ძებნა</label>
       <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="M20 20 L16 16" /></svg>
-      <input id="search" type="search" [value]="query()" (input)="onSearch($event)" placeholder="მოძებნეთ არომატი, ღვინო, კერძი…" />
+      <input id="search" type="search" [value]="query()" (input)="onSearch($event)" placeholder="მოძებნეთ არომატი, კოქტეილი, კერძი…" />
     </div>
     <nav class="cats" aria-label="მენიუს კატეგორიები">
       @for (c of categories; track c.id) {
@@ -252,7 +252,7 @@
     <h2>ბაღი ნელი საღამოებისთვის</h2>
     <p>
       Hookah Garden ერთი მიზეზით გავხსენით: ადგილი, სადაც საღამო არასდროს ჩქარობს. ყოველი თასი ხელით ივსება,
-      ყოველი ჩაი შეკვეთისთანავე ყივდება, ხოლო ჩვენი ღვინო კახეთის პატარა საოჯახო მარნებიდან მოდის.
+      ყოველი კოქტეილი შეკვეთისთანავე მზადდება ახალი ხილითა და ბალახებით.
     </p>
     <ul class="about__list">
       <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 L10 17 L19 7" /></svg>ბუნებრივი ქოქოსის ნახშირი, იცვლება რამდენჯერაც გსურთ</li>
@@ -268,7 +268,7 @@
   <div class="visit__grid">
     <div class="visit__brand">
       <span class="brand__text brand__text--lg"><b>HOOKAH</b><small>GARDEN</small></span>
-      <p>ჩილიმის ლაუნჯი, ღვინისა და ჩაის სახლი</p>
+      <p>ჩილიმისა და კოქტეილების ლაუნჯი</p>
       <a class="btn btn--solid" href="tel:+995000000000">მაგიდის დაჯავშნა</a>
     </div>
     <div class="visit__col">
